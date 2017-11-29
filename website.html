@@ -1,0 +1,18 @@
+<p id ="text" style = "color:blue"> "Hello World!" </p>
+<button type = "button" onclick = "changeColor()"> Click to Change Color!</button>
+
+<script>
+var color = "blue";
+function changeColor(){
+var x = document.getElementById("text");
+
+if(color === "blue"){
+	x.style.color = 'red';
+	color = "red";
+}
+else{
+	x.style.color = 'blue';
+	color = "blue";
+}
+};
+</script>
