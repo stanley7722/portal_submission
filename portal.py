@@ -26,12 +26,12 @@ def conflicted_events(all_events):
         time = times.strip()
         print(time)
         if date in comparison_dates:
-            if time in comparison_times:
-                result.append(event)
-            else:
-                comparison_times.append(time)
+            #if time in comparison_times:
+            result.append(date)
+            #else:
+                #comparison_times.append(time)
         else:
-            comparison_dates.append(date)
+            result.append(date)
         #a = datetime.strptime(str(date), "%m/%d/%y")
     return result
 print(conflicted_events(all_events))
