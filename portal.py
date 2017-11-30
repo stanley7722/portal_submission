@@ -31,7 +31,7 @@ def conflicted_events(all_events):
             #else:
                 #comparison_times.append(time)
         else:
-            result.append(date)
+            comparison_dates.append(date)
         #a = datetime.strptime(str(date), "%m/%d/%y")
     return result
 print(conflicted_events(all_events))
